@@ -8,7 +8,7 @@
     </attribute>
     <attribute>
       <attributeName>ruleflow-group</attributeName>
-      <value>validations</value>
+      <value>definingRates</value>
     </attribute>
     <attribute>
       <attributeName>no-loop</attributeName>
@@ -82,7 +82,19 @@
       </window>
     </fact>
   </lhs>
-  <rhs/>
+  <rhs>
+    <setField>
+      <fieldValues>
+        <fieldValue>
+          <field>rate</field>
+          <value>$rate</value>
+          <nature>7</nature>
+          <type>Double</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>person</variable>
+    </setField>
+  </rhs>
   <imports>
     <imports/>
   </imports>
@@ -91,6 +103,13 @@
   <table>
     <entry>
       <string>$hAge</string>
+      <list>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
+      <string>$rate</string>
       <list>
         <string></string>
         <string></string>
