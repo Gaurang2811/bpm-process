@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>amount</name>
-          <value>1000000</value>
+          <value>10000</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -29,8 +29,8 @@
       <name>validations</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>14</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>16</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -48,7 +48,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-05-15 09:09:02.80 UTC</lastRunResult>
+  <lastRunResult>2017-05-15 09:16:04.437 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>process.business_process_poc</packageName>
