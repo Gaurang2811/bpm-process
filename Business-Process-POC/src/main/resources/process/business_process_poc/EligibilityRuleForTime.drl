@@ -1,2 +1,23 @@
 package process.business_process_poc;
 
+rule "EligibilityRuleForTimeDuration_1"
+	dialect "mvel"
+	ruleflow-group "validations"
+	no-loop true
+	when
+		person : Person( time > 20 , isEligible == true )
+	then
+		person.setIsEligible( false );
+end
+
+rule "EligibilityRuleForTimeDuration_0"
+	dialect "mvel"
+	ruleflow-group "validations"
+	no-loop true
+	when
+		person : Person( time < 1 , isEligible == true )
+	then
+		person.setIsEligible( false );
+end
+
+
