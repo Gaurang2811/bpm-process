@@ -4,6 +4,10 @@ import java.lang.Number;
 
 rule "EligibilityRuleForAmountAndTime"
 	dialect "mvel"
+	ruleflow-group "validations"
+	no-loop true
 	when
+		person : Person( amount < 1000.0 , isEligible == true )
 	then
+		person.setIsEligible( false );
 end
