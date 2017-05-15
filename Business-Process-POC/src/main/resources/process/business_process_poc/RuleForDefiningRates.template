@@ -104,6 +104,8 @@
     <entry>
       <string>$hAge</string>
       <list>
+        <string>65</string>
+        <string>65</string>
         <string></string>
         <string></string>
       </list>
@@ -111,8 +113,10 @@
     <entry>
       <string>$rate</string>
       <list>
-        <string></string>
-        <string></string>
+        <string>11</string>
+        <string>10</string>
+        <string>9</string>
+        <string>8</string>
       </list>
     </entry>
     <entry>
@@ -120,6 +124,8 @@
       <list>
         <string>1</string>
         <string>2</string>
+        <string>3</string>
+        <string>4</string>
       </list>
     </entry>
     <entry>
@@ -127,12 +133,16 @@
       <list>
         <string></string>
         <string></string>
+        <string>65</string>
+        <string>65</string>
       </list>
     </entry>
     <entry>
       <string>$lTime</string>
       <list>
+        <string>10</string>
         <string></string>
+        <string>10</string>
         <string></string>
       </list>
     </entry>
@@ -140,10 +150,12 @@
       <string>$hTime</string>
       <list>
         <string></string>
+        <string>10</string>
         <string></string>
+        <string>10</string>
       </list>
     </entry>
   </table>
-  <idCol>2</idCol>
-  <rowsCount>2</rowsCount>
+  <idCol>4</idCol>
+  <rowsCount>4</rowsCount>
 </rule>
