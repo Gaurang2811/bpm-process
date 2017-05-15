@@ -22,8 +22,14 @@ public class Person implements java.io.Serializable
    @org.kie.api.definition.type.Label("Eligible or Not")
    private java.lang.Boolean isEligible;
 
-   @org.kie.api.definition.type.Label(value = "Principle Ammount")
+   @org.kie.api.definition.type.Label("Principle Ammount")
    private java.lang.Double amount;
+
+   @org.kie.api.definition.type.Label(value = "Rate")
+   private java.lang.Double rate;
+
+   @org.kie.api.definition.type.Label(value = "Simple Interest")
+   private java.lang.Double interest;
 
    public Person()
    {
@@ -106,10 +112,31 @@ public class Person implements java.io.Serializable
       this.amount = amount;
    }
 
+   public java.lang.Double getRate()
+   {
+      return this.rate;
+   }
+
+   public void setRate(java.lang.Double rate)
+   {
+      this.rate = rate;
+   }
+
+   public java.lang.Double getInterest()
+   {
+      return this.interest;
+   }
+
+   public void setInterest(java.lang.Double interest)
+   {
+      this.interest = interest;
+   }
+
    public Person(java.lang.String name, java.lang.String gender,
          java.lang.String age, java.lang.Double time,
          java.lang.String maritalStatus, java.lang.Boolean isEligible,
-         java.lang.Double amount)
+         java.lang.Double amount, java.lang.Double rate,
+         java.lang.Double interest)
    {
       this.name = name;
       this.gender = gender;
@@ -118,5 +145,7 @@ public class Person implements java.io.Serializable
       this.maritalStatus = maritalStatus;
       this.isEligible = isEligible;
       this.amount = amount;
+      this.rate = rate;
+      this.interest = interest;
    }
 }
