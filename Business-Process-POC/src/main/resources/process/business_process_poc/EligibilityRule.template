@@ -8,22 +8,35 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
-            <value>100000.0</value>
-            <operator>&gt;</operator>
-            <constraintValueType>1</constraintValueType>
+            <value>$tLess</value>
+            <operator>&lt;</operator>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
             </expression>
             <parameters/>
             <factType>Person</factType>
-            <fieldName>amount</fieldName>
+            <fieldName>time</fieldName>
             <fieldType>Double</fieldType>
           </fieldConstraint>
           <fieldConstraint>
-            <value>true</value>
+            <value>$tGreater</value>
+            <operator>&gt;</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Person</factType>
+            <fieldName>time</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$eligible</value>
             <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -42,67 +55,18 @@
         <parameters/>
       </window>
     </fact>
-    <fact>
-      <constraintList>
-        <constraints>
-          <fieldConstraint>
-            <value>1.0</value>
-            <operator>&lt;</operator>
-            <constraintValueType>1</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>Person</factType>
-            <fieldName>time</fieldName>
-            <fieldType>Double</fieldType>
-          </fieldConstraint>
-          <fieldConstraint>
-            <value>true</value>
-            <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>Person</factType>
-            <fieldName>isEligible</fieldName>
-            <fieldType>Boolean</fieldType>
-          </fieldConstraint>
-        </constraints>
-      </constraintList>
-      <factType>Person</factType>
-      <boundName>person1</boundName>
-      <isNegated>false</isNegated>
-      <window>
-        <parameters/>
-      </window>
-    </fact>
   </lhs>
   <rhs>
     <setField>
       <fieldValues>
         <fieldValue>
           <field>isEligible</field>
-          <value>false</value>
-          <nature>1</nature>
+          <value>$thenEligible</value>
+          <nature>7</nature>
           <type>Boolean</type>
         </fieldValue>
       </fieldValues>
       <variable>person</variable>
-    </setField>
-    <setField>
-      <fieldValues>
-        <fieldValue>
-          <field>isEligible</field>
-          <value>false</value>
-          <nature>1</nature>
-          <type>Boolean</type>
-        </fieldValue>
-      </fieldValues>
-      <variable>person1</variable>
     </setField>
   </rhs>
   <imports>
@@ -113,9 +77,40 @@
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+        <string>2</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$thenEligible</string>
+      <list>
+        <string></string>
+        <string>false</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$eligible</string>
+      <list>
+        <string>true</string>
+        <string>true</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$tLess</string>
+      <list>
+        <string>1</string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
+      <string>$tGreater</string>
+      <list>
+        <string></string>
+        <string>20</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>2</idCol>
+  <rowsCount>2</rowsCount>
 </rule>
