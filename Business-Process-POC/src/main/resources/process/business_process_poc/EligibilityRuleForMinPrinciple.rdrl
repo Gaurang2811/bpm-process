@@ -7,7 +7,7 @@ rule "EligibilityRuleForMinPrinciple"
 	ruleflow-group "validations"
 	no-loop true
 	when
-		person : Person( amount < 1000.0 , isEligible == true , amount > 100000.0 || amount < 1000.0 )
+		person : Person( amount > 100000.0 || amount < 1000.0 , isEligible == true )
 	then
 		person.setIsEligible( false );
 end
