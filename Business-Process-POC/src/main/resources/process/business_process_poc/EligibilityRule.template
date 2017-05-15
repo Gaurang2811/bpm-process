@@ -85,7 +85,7 @@
     <entry>
       <string>$thenEligible</string>
       <list>
-        <string></string>
+        <string>false</string>
         <string>false</string>
       </list>
     </entry>
