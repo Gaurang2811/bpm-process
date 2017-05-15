@@ -2,7 +2,7 @@ package process.business_process_poc;
 
 import java.lang.Number;
 
-rule "EligibilityRuleForAmountAndTime"
+rule "EligibilityRuleForMinPrinciple"
 	dialect "mvel"
 	ruleflow-group "validations"
 	no-loop true
