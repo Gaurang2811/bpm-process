@@ -16,72 +16,8 @@
     </attribute>
   </attributes>
   <metadataList/>
-  <lhs>
-    <fact>
-      <constraintList>
-        <constraints>
-          <fieldConstraint>
-            <value>$tLess</value>
-            <operator>&lt;</operator>
-            <constraintValueType>7</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>Person</factType>
-            <fieldName>time</fieldName>
-            <fieldType>Double</fieldType>
-          </fieldConstraint>
-          <fieldConstraint>
-            <value>$tGreater</value>
-            <operator>&gt;</operator>
-            <constraintValueType>7</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>Person</factType>
-            <fieldName>time</fieldName>
-            <fieldType>Double</fieldType>
-          </fieldConstraint>
-          <fieldConstraint>
-            <value>$eligible</value>
-            <operator>==</operator>
-            <constraintValueType>7</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>Person</factType>
-            <fieldName>isEligible</fieldName>
-            <fieldType>Boolean</fieldType>
-          </fieldConstraint>
-        </constraints>
-      </constraintList>
-      <factType>Person</factType>
-      <boundName>person</boundName>
-      <isNegated>false</isNegated>
-      <window>
-        <parameters/>
-      </window>
-    </fact>
-  </lhs>
-  <rhs>
-    <setField>
-      <fieldValues>
-        <fieldValue>
-          <field>isEligible</field>
-          <value>$thenEligible</value>
-          <nature>7</nature>
-          <type>Boolean</type>
-        </fieldValue>
-      </fieldValues>
-      <variable>person</variable>
-    </setField>
-  </rhs>
+  <lhs/>
+  <rhs/>
   <imports>
     <imports/>
   </imports>
@@ -93,34 +29,6 @@
       <list>
         <string>1</string>
         <string>2</string>
-      </list>
-    </entry>
-    <entry>
-      <string>$thenEligible</string>
-      <list>
-        <string>false</string>
-        <string>false</string>
-      </list>
-    </entry>
-    <entry>
-      <string>$eligible</string>
-      <list>
-        <string>true</string>
-        <string>true</string>
-      </list>
-    </entry>
-    <entry>
-      <string>$tLess</string>
-      <list>
-        <string>1</string>
-        <string></string>
-      </list>
-    </entry>
-    <entry>
-      <string>$tGreater</string>
-      <list>
-        <string></string>
-        <string>20</string>
       </list>
     </entry>
   </table>
