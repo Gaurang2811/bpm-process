@@ -92,7 +92,7 @@ public class Person implements java.io.Serializable
    @Override
    public String toString()
    {
-      return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", principle=" + principle + ", time="
+      return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", principle=" + amount + ", time="
             + time + ", maritalStatus=" + maritalStatus + ", isEligible=" + isEligible + "]";
    }
 
