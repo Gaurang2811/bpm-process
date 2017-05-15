@@ -16,7 +16,72 @@
     </attribute>
   </attributes>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$lAge</value>
+            <operator>&lt;</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Person</factType>
+            <fieldName>age</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$hAge</value>
+            <operator>&gt;=</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Person</factType>
+            <fieldName>age</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$lTime</value>
+            <operator>&lt;</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Person</factType>
+            <fieldName>time</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$hTime</value>
+            <operator>&gt;=</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Person</factType>
+            <fieldName>time</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>Person</factType>
+      <boundName>person</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
   <rhs/>
   <imports>
     <imports/>
@@ -25,10 +90,38 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$hAge</string>
+      <list>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>1</string>
         <string>2</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$lAge</string>
+      <list>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
+      <string>$lTime</string>
+      <list>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
+      <string>$hTime</string>
+      <list>
+        <string></string>
+        <string></string>
       </list>
     </entry>
   </table>
