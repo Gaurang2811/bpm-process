@@ -1,5 +1,5 @@
 <rule>
-  <name>EligibilityRule</name>
+  <name>EligibilityRuleForTimeDuration</name>
   <modelVersion>1.0</modelVersion>
   <attributes>
     <attribute>
