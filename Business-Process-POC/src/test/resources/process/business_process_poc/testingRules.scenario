@@ -13,7 +13,7 @@
         </field-data>
         <field-data>
           <name>time</name>
-          <value>30</value>
+          <value>10</value>
           <nature>4</nature>
         </field-data>
         <field-data>
@@ -25,9 +25,12 @@
       <name>fact</name>
       <isModify>false</isModify>
     </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>validations</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>30</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>17</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -35,8 +38,8 @@
           <fieldName>isEligible</fieldName>
           <expected>false</expected>
           <actualResult>true</actualResult>
-          <successResult>false</successResult>
-          <explanation>[fact] field [isEligible] was [true] expected [false].</explanation>
+          <successResult>true</successResult>
+          <explanation>[fact] field [isEligible] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -45,7 +48,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-05-15 09:07:05.508 UTC</lastRunResult>
+  <lastRunResult>2017-05-15 09:08:23.74 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>process.business_process_poc</packageName>
