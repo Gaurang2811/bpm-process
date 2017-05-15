@@ -1,0 +1,9 @@
+package process.business_process_poc;
+
+import java.lang.Number;
+
+rule "EligibilityRuleForAmountAndTime"
+	dialect "mvel"
+	when
+	then
+end
