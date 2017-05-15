@@ -112,4 +112,10 @@ public class Person implements java.io.Serializable
       this.isEligible = isEligible;
    }
 
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", principle=" + principle + ", time="
+				+ time + ", maritalStatus=" + maritalStatus + ", isEligible=" + isEligible + "]";
+	}
 }
