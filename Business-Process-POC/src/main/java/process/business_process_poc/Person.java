@@ -9,20 +9,21 @@ public class Person implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Gender")
+   @org.kie.api.definition.type.Label("Gender")
    private java.lang.String gender;
-   @org.kie.api.definition.type.Label(value = "Age")
+   @org.kie.api.definition.type.Label("Age")
    private java.lang.String age;
-   @org.kie.api.definition.type.Label(value = "Principle Ammount")
-   private java.lang.Double principle;
-   @org.kie.api.definition.type.Label(value = "Time")
+   @org.kie.api.definition.type.Label("Time")
    private java.lang.Double time;
-   @org.kie.api.definition.type.Label(value = "Marital Status")
+   @org.kie.api.definition.type.Label("Marital Status")
    private java.lang.String maritalStatus;
-   @org.kie.api.definition.type.Label(value = "Eligible or Not")
+   @org.kie.api.definition.type.Label("Eligible or Not")
    private java.lang.Boolean isEligible;
+
+   @org.kie.api.definition.type.Label(value = "Principle Ammount")
+   private java.lang.Double amount;
 
    public Person()
    {
@@ -58,16 +59,6 @@ public class Person implements java.io.Serializable
       this.age = age;
    }
 
-   public java.lang.Double getPrinciple()
-   {
-      return this.principle;
-   }
-
-   public void setPrinciple(java.lang.Double principle)
-   {
-      this.principle = principle;
-   }
-
    public java.lang.Double getTime()
    {
       return this.time;
@@ -98,24 +89,34 @@ public class Person implements java.io.Serializable
       this.isEligible = isEligible;
    }
 
+   @Override
+   public String toString()
+   {
+      return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", principle=" + principle + ", time="
+            + time + ", maritalStatus=" + maritalStatus + ", isEligible=" + isEligible + "]";
+   }
+
+   public java.lang.Double getAmount()
+   {
+      return this.amount;
+   }
+
+   public void setAmount(java.lang.Double amount)
+   {
+      this.amount = amount;
+   }
+
    public Person(java.lang.String name, java.lang.String gender,
-         java.lang.String age, java.lang.Double principle,
-         java.lang.Double time, java.lang.String maritalStatus,
-         java.lang.Boolean isEligible)
+         java.lang.String age, java.lang.Double time,
+         java.lang.String maritalStatus, java.lang.Boolean isEligible,
+         java.lang.Double amount)
    {
       this.name = name;
       this.gender = gender;
       this.age = age;
-      this.principle = principle;
       this.time = time;
       this.maritalStatus = maritalStatus;
       this.isEligible = isEligible;
+      this.amount = amount;
    }
-
-
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", principle=" + principle + ", time="
-				+ time + ", maritalStatus=" + maritalStatus + ", isEligible=" + isEligible + "]";
-	}
 }
