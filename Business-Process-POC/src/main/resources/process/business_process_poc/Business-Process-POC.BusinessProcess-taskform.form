@@ -1,0 +1,78 @@
+
+<form id="826969536">
+<property name="name" value="Business-Process-POC.BusinessProcess-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="8" name="person_rate" type="InputTextDouble" id="1933747488">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;rate (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/rate"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="7" name="person_name" type="InputText" id="210884597">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="approvalStatus" type="InputText" id="1252269281">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;approvalStatus (approvalStatus)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="approvalStatus"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="person_age" type="InputText" id="666650346">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;age (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/age"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="person_time" type="InputTextDouble" id="371912156">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;time (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/time"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="4" name="person_interest" type="InputTextDouble" id="844025493">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;interest (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/interest"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="3" name="person_gender" type="InputText" id="1264919017">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;gender (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/gender"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="person_isEligible" type="CheckBox" id="595451265">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;isEligible (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/isEligible"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="person_amount" type="InputTextDouble" id="675177683">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;amount (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/amount"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="6" name="person_maritalStatus" type="InputText" id="547265456">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;maritalStatus (person)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="person/maritalStatus"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="approvalStatus" value="java.lang.String" id="approvalStatus"/>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="person" value="process.business_process_poc.Person" id="person"/>
+</form>
