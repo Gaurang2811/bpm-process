@@ -12,7 +12,7 @@ public class Person implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("Name")
-   @NotBlan
+   @NotBlank
    private java.lang.String name;
    
    @org.kie.api.definition.type.Label("Gender")
