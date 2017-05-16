@@ -95,13 +95,6 @@ public class Person implements java.io.Serializable
       this.isEligible = isEligible;
    }
 
-   @Override
-   public String toString()
-   {
-      return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", principle=" + amount + ", time="
-            + time + ", maritalStatus=" + maritalStatus + ", isEligible=" + isEligible + "]";
-   }
-
    public java.lang.Double getAmount()
    {
       return this.amount;
@@ -148,4 +141,13 @@ public class Person implements java.io.Serializable
       this.rate = rate;
       this.interest = interest;
    }
+   
+   	@Override
+	public String toString() {
+		return "Person [name=" + name + ", gender=" + gender + ", age=" + age + ", time=" + time + ", maritalStatus="
+				+ maritalStatus + ", isEligible=" + isEligible + ", amount=" + amount + ", rate=" + rate + ", interest="
+				+ interest + "]";
+	}
+	
+	
 }
