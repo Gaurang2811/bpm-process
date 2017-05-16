@@ -14,16 +14,22 @@ public class Person implements java.io.Serializable
    @org.kie.api.definition.type.Label("Name")
    @NotBlank
    private java.lang.String name;
+   
    @org.kie.api.definition.type.Label("Gender")
    @NotBlank
    private java.lang.String gender;
+   
    @org.kie.api.definition.type.Label("Age")
+   @NotBlank
    private java.lang.String age;
+   
    @org.kie.api.definition.type.Label("Time")
    @NotBlank
    private java.lang.Double time;
+   
    @org.kie.api.definition.type.Label("Marital Status")
    private java.lang.String maritalStatus;
+   
    @org.kie.api.definition.type.Label("Eligible or Not")
    private java.lang.Boolean isEligible;
 
