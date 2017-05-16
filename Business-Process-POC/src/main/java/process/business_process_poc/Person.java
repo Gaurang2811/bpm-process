@@ -13,7 +13,7 @@ public class Person implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Name")
    @NotBlank
-   @NotNull
+   @NotEmpty
    private java.lang.String name;
    
    @org.kie.api.definition.type.Label("Gender")
