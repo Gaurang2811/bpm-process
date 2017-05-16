@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Process</groupId>
   <artifactId>Business-Process-POC</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
   <packaging>kjar</packaging>
   <name>Business-Process-POC</name>
   <description>This is a project with BPM for POC purpose.</description>
