@@ -5,8 +5,8 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   [
     "name" : "CustomTaskForInterest", 
     "parameters" : [ 
-        "amount" : new StringDataType(), 
-        "rate" : new StringDataType(), 
+        "amount" : new ObjectDataType(), 
+        "rate" : new ObjectDataType(), 
         "time" : new ObjectDataType() 
     ], 
     "results" : [ 
