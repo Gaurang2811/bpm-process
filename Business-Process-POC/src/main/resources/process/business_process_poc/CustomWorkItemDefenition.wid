@@ -10,7 +10,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
         "time" : new ObjectDataType() 
     ], 
     "results" : [ 
-        "interest" : new ObjectDataType() 
+        "interest" : new ObjectDataType("java.util.Map") 
     ], 
     "displayName" : "CustomTaskForInterest", 
     "icon" : "customIcon.gif" 
