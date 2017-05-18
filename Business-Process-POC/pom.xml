@@ -9,11 +9,6 @@
   <name>Business-Process-POC</name>
   <description>This is a project with BPM for POC purpose.</description>
   <dependencies>
-    <dependency>
-      <groupId>custom</groupId>
-      <artifactId>work-item-handler</artifactId>
-      <version>1.0.0</version>
-    </dependency>
   </dependencies>
   <repositories>
     <repository>
