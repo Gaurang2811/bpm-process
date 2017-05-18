@@ -8,8 +8,6 @@
   <packaging>kjar</packaging>
   <name>Business-Process-POC</name>
   <description>This is a project with BPM for POC purpose.</description>
-  <dependencies>
-  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
